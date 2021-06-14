@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+@import "./../../node_modules/normalize-scss/sass/normalize";
+@import "variables";
+
+@include normalize();
+
+// Our components style
+@import "components/navbar";
+@import "components/slider";
+@import "components/links";
+@import "components/funds";
+@import "components/footer";

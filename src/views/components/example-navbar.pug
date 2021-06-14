@@ -1,0 +1,24 @@
+// Navbar-menu__item mixin
+mixin menuItem(title, icon)
+  .navbar-menu__item
+    i(class=icon)
+    span= title
+
+// Navbar
+header.navbar
+  .navbar__brand
+    .navbar__brand__logo
+    .navbar__brand__text
+      | Asset Management
+  .navbar-collapse__toggler(id='toggleNavbarMenu')
+    div
+    div
+    div
+
+  .navbar-collapse(id='navbarCollapse')
+    nav.navbar-menu
+      +menuItem('Funds', 'svg-funds svg-funds-dims')
+      +menuItem('Blog', 'svg-blog svg-blog-dims')
+      +menuItem('Services', 'svg-services svg-services-dims')
+      +menuItem('About', 'svg-about svg-about-dims')
+      +menuItem('Contacts', 'svg-contacts svg-contacts-dims')

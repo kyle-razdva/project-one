@@ -1,0 +1,45 @@
+include ./../mixins/moreButton.pug
+
+mixin scrollItem(type, text)
+  .links-scroll__area__item
+    .links-scroll__area__item__type= type
+    .links-scroll__area__item__text= text
+    +moreButton()
+
+aside.links(id="primaryLinksContent")
+  .links-cards
+    .links-cards__item
+      .links-cards__item__icon.links-cards__item__icon__purpure
+        i(class='svg-votification svg-votification-dims')
+      .links-cards__item__content
+        p
+          | 2018 Fund Holidays
+          br
+          | Calendar list
+    .links-cards__item
+      .links-cards__item__icon.links-cards__item__icon__green
+        i(class='svg-callendar svg-callendar-dims')
+      .links-cards__item__content
+        p
+          | Notifications of securities
+          br
+          | registration statement
+
+  .links-scroll(data-simplebar)
+    .links-scroll__area
+      +scrollItem(
+      'Special page',
+      'About attractiveness of US bank stock that ...'
+      )
+      +scrollItem(
+      'Video',
+      'About attractiveness of US bank stock that ...'
+      )
+      +scrollItem(
+      'Special page',
+      'About attractiveness of US bank stock that ...'
+      )
+      +scrollItem(
+      'Article',
+      'About attractiveness of US bank stock that ...'
+      )

@@ -1,0 +1,30 @@
+doctype html
+html
+    head
+        title Asset Management company
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='stylesheet', href='./static/main.css')
+        link(rel='stylesheet', href='./static/icons/css/sprite.css')
+        link(rel='stylesheet', href='./static/libs/simplebar.min.css')
+
+    body
+        .wrapper(id='wrapper')
+            include ./components/navbar.pug
+
+            // Main page content
+            main(id='mainContent').content
+
+                // Select language dropdown
+                .content__select__language
+                    span EN
+                    i.svg-combined-shape.svg-combined-shape-dims
+
+                include ./components/slider.pug
+                include ./components/links.pug
+                include ./components/funds.pug
+                include ./components/footer.pug
+
+
+        append scripts
+            script(src='./static/libs/simplebar.min.js')
+            script(src='./static/index.js')

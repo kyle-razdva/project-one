@@ -1,0 +1,112 @@
+@import "globals";
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: #424559;
+}
+
+// Small devices styles are first
+// Common styles
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.content {
+  flex-grow: 1;
+  margin-top: 60px;
+  position: relative;
+
+  &__select__language {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+    color: $color-text-light;
+    font-size: $font-size-sm;
+    cursor: pointer;
+
+    i {
+      margin: 0 10px;
+    }
+  }
+}
+
+.text {
+  &-success {
+    color: $color-text-success;
+  }
+}
+
+.button {
+  padding: 1.3em 4em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &__lg {
+    font-size: $font-size-md;
+  }
+
+  &__primary {
+    color: $color-text-light;
+    background-color: $color-primary;
+  }
+}
+
+.more-element {
+  cursor: pointer;
+  display: inline-block;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+// Medium devices width (320-768px)
+@media screen and (min-width: $width-md) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .content {
+    margin-top: 0;
+    margin-left: 70px;
+
+    &__select__language {
+      visibility: visible;
+      top: 30px;
+      left: 30px;
+    }
+  }
+}
+
+// Large devices width (768-1024px)
+@media screen and (min-width: $width-lg) {
+  .content {
+    margin-top: 0;
+    margin-left: 70px;
+
+    &__select__language {
+      visibility: visible;
+      top: 30px;
+      left: 106px;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+include ./../mixins/moreButton.pug
+
+mixin fundsCard(title, baseValue, prevPercent, prevValue, rates3mouths, rates6mouths, rates1year, totalAssets)
+  .funds-cards__item
+    .funds-cards__title= title
+
+    .funds-cards__value
+      span Base value
+      span= baseValue
+
+    .funds-cards__statistics
+      .funds-cards__statistics__rates
+        .funds-cards__statistics__rates__head
+          | Prev. d
+
+        .funds-cards__statistics__rates__column
+          .funds-cards__statistics__rates__column__content.text-success
+            i.svg-rectangle.svg-rectangle-dims.funds-cards__statistics__rates__column__prefix
+            = prevPercent
+
+        .funds-cards__statistics__rates__column
+          .funds-cards__statistics__rates__column__content
+            span.funds-cards__statistics__rates__column__prefix +
+            = prevValue
+
+      .funds-cards__statistics__rates
+        .funds-cards__statistics__rates__head
+          | Rate of decline
+
+        .funds-cards__statistics__rates__column
+          .funds-cards__statistics__rates__column__content 3m
+          .funds-cards__statistics__rates__column__devider ---
+          .funds-cards__statistics__rates__column__content 6m
+          .funds-cards__statistics__rates__column__devider ---
+          .funds-cards__statistics__rates__column__content 1y
+
+        .funds-cards__statistics__rates__column
+          .funds-cards__statistics__rates__column__content= rates3mouths
+          .funds-cards__statistics__rates__column__devider
+          .funds-cards__statistics__rates__column__content= rates6mouths
+          .funds-cards__statistics__rates__column__devider
+          .funds-cards__statistics__rates__column__content= rates1year
+
+    .funds-cards__assets.funds-cards__value
+      span Total net assets
+      span=totalAssets
+
+    .funds-cards__more
+      .funds-cards__more__row
+        +moreButton()
+      .funds-cards__more__row
+        i(class='svg-pin-unactive svg-pin-unactive-dims')
+
+section.funds(id='fundsContent')
+  .container
+    h1 Featured funds
+
+    .funds-nav
+      .funds-nav__item
+        +moreButton()
+
+      .funds-nav__last-sync-date
+        i(class='svg-refresh svg-refresh-dims')
+        span 12 Dec 2017
+
+  .funds-cards
+    +fundsCard(
+    'New Global Dividend Share Fund (Monthly Distribution Type)',
+    '9,903$',
+    '0.09%',
+    '8 $',
+    '6.39%',
+    '6.35%',
+    '17.9%',
+    '123.04$'
+    )
+
+    +fundsCard(
+    'New Global Dividend Share Fund (Monthly Distribution Type)',
+    '9,903$',
+    '0.09%',
+    '8 $',
+    '6.39%',
+    '6.35%',
+    '17.9%',
+    '123.04$'
+    )
+
+  .funds-footer.container
+    button.button.button__lg.button__primary
+      | More
+
+    p
+      | ※ The base price is around 10,000.
+      br
+      | ※ Period-specific severity rate is the rise rate of the base price calculated assuming that
+      | the revenue share (before tax) is fully reinvested at the time of distribution. We calculate
+      | the end of the previous month as the base date.
+      br
+      | ※ In actual funds, the rate of decline by investor varies depending on the taxable condition.
+      | Moreover, we do not consider expenses, taxes etc. at the time of  cashing.
+      br
+      | ※ For risks and fees, please check on the individual page of the fund.
