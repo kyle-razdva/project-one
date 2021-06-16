@@ -1,9 +1,27 @@
 .svg-_example {
-	background: url("svg/sprite.css-b00cc564.svg") 0 0 no-repeat;
+	background: url("svg/sprite.css-983b061c.svg") 0 0 no-repeat;
 }
 
 .svg-_example-dims {
 	width: 30px;
 	height: 30px;
+}
+
+.svg-close {
+	background: url("svg/sprite.css-983b061c.svg") 0 100% no-repeat;
+}
+
+.svg-close-dims {
+	width: 21px;
+	height: 21px;
+}
+
+.svg-logo {
+	background: url("svg/sprite.css-983b061c.svg") 100% 0 no-repeat;
+}
+
+.svg-logo-dims {
+	width: 28px;
+	height: 20px;
 }
 

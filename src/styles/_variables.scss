@@ -1,24 +1,18 @@
+$color-white: #FFFFFF;
+$color-orange-500: #F6B549;
 
-$width-sm: 320px;
-$width-md: 768px;
-$width-lg: 1024px;
-$width-xl: 1280px;
+$color-grey-200: #FAFAFA;
+$color-grey-300: #F4F8F7;
+$color-grey-500: #8C9DA1;
+$color-grey-700: #526E74;
 
-$font-size-sm: 12px;
-$font-size-md: 14px;
-$font-size-lg: 30px;
-$font-size-xl: 34px;
+$color-green-400: #99BE56;
+$color-green-500: #378757;
+$color-green-600: #103E38;
+$color-green-700: #123022;
 
-$color-dark: #34384b;
-$color-success: #00a758;
-$color-info: #361558;
-$color-primary: #ff7769;
-$color-secondary: #fafafa;
 
-$color-text-dark: #424559;
-$color-text-light: #ffffff;
-$color-text-secondary: #8e90a2;
-$color-text-success: #00c46e;
-
-$color-border-dark: #282b3e;
-$color-border-secondary: #eeeeee
+// media breakpoints
+$media-md: 768px;
+$media-lg: 992px;
+$media-xl: 1200px
