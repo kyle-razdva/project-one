@@ -2,13 +2,13 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
     height: 90px;
     box-sizing: border-box;
     background-color: $color-grey-200;
+    z-index: 1;
 
     &__logo {
         display: flex;
@@ -44,7 +44,7 @@
     }
 
     &__menu {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         position: absolute;
@@ -78,16 +78,70 @@
                 line-height: 19px;
                 color: #C0F1D4;
 
-                    &-line {
-                        margin-bottom: 20px;
-                    }
+                &-line {
+                    margin-bottom: 20px;
+                }
             }
         }
+        
         &__close-icon {
             display: flex;
             position: absolute;
             left: 50%;
             bottom: 45px;
+        }
+    }
+}
+
+// Medium devices width (768px)
+@media screen and (min-width: $media-md) {
+    .navbar {
+        
+        &__logo {
+            z-index: 1;
+        }
+
+        &__container {
+            justify-content: center;
+        }
+
+        &__menu-button {
+            display: none;
+        }
+
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-grey-200;
+            height: 90px;
+            border-left: none;
+            
+            &__item {
+                margin-top: 0px;
+                padding: 0px 25px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: $color-grey-700;
+
+                i {
+                    display: inline-block;
+                    margin-left: 9px;
+                    margin-bottom: 2px;
+                }
+
+                &__list {
+                    display: none;
+                }
+            }
+
+            &__close-icon {
+                display: none;
+            }
         }
     }
 }

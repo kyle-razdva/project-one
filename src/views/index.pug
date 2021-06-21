@@ -2,11 +2,13 @@ doctype html
 html 
     head
         title Myrtus | Сообщество людей, которые делают мир лучше
-        meta(charset="utf-8")
+        meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         link(rel='stylesheet', href='./static/main.css')
         link(rel='stylesheet', href='./static/icons/css/sprite.css')
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+        link(rel='preconnect' href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Montserrat:wght@100;200;300;400;500&display=swap' rel='stylesheet')
     body
         include ./components/navbar.pug
+        include ./components/main.pug
+        include ./components/waiting.pug

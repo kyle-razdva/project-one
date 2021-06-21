@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+@import url('https://fonts.googleapis.com/css?family=Inter&Montserrat');
 @import "./../../node_modules/normalize-scss/sass/normalize";
 @import "variables";
 
 @include normalize();
 
+@import "mixins";
+
 // Our components style
 @import "components/navbar";
+@import "components/main";
+@import "components/waiting";

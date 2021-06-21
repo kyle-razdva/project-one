@@ -1,0 +1,186 @@
+@import '../variables';
+@import '../components/mixins/text-heading-mobile.scss';
+@import '../components/mixins/text-paragraph-mobile.scss';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px !important;
+    padding-bottom: 24px !important;
+    
+    &__heading {
+        @include text-heading-mobile;
+    }
+
+    &__text {
+        @include text-parahraph-mobile;
+    }
+
+    &__figures {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        svg, img {
+            width: 100%;
+            height: auto;
+        }
+
+        &__column-one{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 31%;
+        }
+
+        &__column-two{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 31%;
+            margin-top: 54px;
+
+            &__margin-bottom{
+                margin-bottom: 16px;
+            }
+        }
+
+        &__column-three {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 31%;
+
+            &__position {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                margin-bottom: 6px;
+
+               i {
+                    position: absolute;
+                    bottom: -13px;
+                }
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+        
+        &__circle {
+            position: absolute;
+        }
+    }
+
+
+}
+
+.main-md {
+    display: none;
+}
+
+// Medium devices width (768px)
+@media screen and (min-width: $media-md) {
+    .main-md {
+        padding-top: 90px !important;
+        display: flex;
+        justify-content: space-between;
+
+        svg, img {
+            width: 100%;
+            height: auto;
+        }
+        
+        &__column-one {
+            width: 15%;
+
+            &__top {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 187px;
+                padding-top: 0px;
+            }
+
+            &__bottom {
+                display: flex;
+                flex-direction: column;
+                margin-top: 198px;
+                position: relative;
+
+                svg {
+                    position: absolute;
+                    top: 120%;
+                }
+            }
+        }
+
+        &__column-two {
+            display: flex;
+            flex-direction: column;
+            width: 55%;
+            margin-top: 68px;
+
+            &__heading {
+                @include text-heading-md;
+            }
+            
+            &__text {
+                @include text-parahraph-md;
+            }
+
+            &__button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+                margin-bottom: 65px;
+
+                &__ring {
+                    animation: 42s linear infinite ring;
+                }
+
+                @keyframes ring {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+                
+                &__circle {
+                    position: absolute;
+                }
+            }
+        }
+
+        &__column-three {
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+
+            &__top {
+                position: relative;
+                top: -20%;
+                margin-bottom: 107px;
+                z-index: 1;
+
+                i {
+                    position: absolute;
+                    left: 40%;
+                    bottom: 30%;
+                }
+            }
+        }
+    }
+
+    .main {
+        display: none;
+    }
+}

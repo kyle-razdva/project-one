@@ -1,0 +1,21 @@
+@import "../../variables";
+
+@mixin text-heading-mobile() {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    color: $color-green-600;
+    margin: 0px auto 8px;
+}
+
+@mixin text-heading-md() {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color: $color-green-600;
+    margin: 0px auto 14px;
+}
