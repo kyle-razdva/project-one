@@ -1,0 +1,35 @@
+@import '../variables';
+@import '../components/mixins/text-heading-mobile.scss';
+@import '../components/mixins/text-paragraph-mobile.scss';
+
+.waiting {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px !important;
+    padding-top: 40px !important;
+    position: relative;
+
+    &__heading {
+        @include text-heading-mobile;
+    }
+
+    &__list {
+        @include text-parahraph-mobile;
+        padding-left: 0px;
+    }
+
+    // &__ellipse {
+    //     position: absolute;
+    // }
+
+    &__line-angle {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        background: linear-gradient(180deg,rgba(140,157,161,.12),rgba(140,157,161,0) 164.43%);
+        transform: skewY(-5deg);
+    }
+}

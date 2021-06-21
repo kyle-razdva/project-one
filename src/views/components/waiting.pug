@@ -1,0 +1,13 @@
+include ../mixins/list-item.pug
+
+div(class='waiting').container
+    h1.waiting__heading Мы ждем вас на Myrtus, если вы:
+    ul.waiting__list
+        +list-item('Волонтер или активист')
+        +list-item('Хотите начать или уже помогаете природе и людям')
+        +list-item('Известная личность и хотите привлечь внимание к глобальной или социальной проблеме')
+        +list-item('Представляете благотворительный фонд или другую общественную организацию')
+        +list-item('Попали в трудную ситуацию и негде попросить о помощи')
+        +list-item('Занимаетесь корпоративной благотворительностью')
+    //- i(class='svg-ellipse svg-ellipse-dims waiting__ellipse')
+    .waiting__line-angle

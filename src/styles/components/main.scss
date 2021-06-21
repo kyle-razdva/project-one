@@ -1,0 +1,81 @@
+@import '../variables';
+@import '../components/mixins/text-heading-mobile.scss';
+@import '../components/mixins/text-paragraph-mobile.scss';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px !important;
+    padding-bottom: 24px !important;
+    
+    &__heading {
+        @include text-heading-mobile;
+    }
+
+    &__text {
+        @include text-parahraph-mobile;
+    }
+
+    &__figures {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        svg, img {
+            width: 100%;
+            height: auto;
+        }
+
+        &__column-one{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 31%;
+        }
+
+        &__column-two{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 31%;
+            margin-top: 54px;
+
+            &__margin-bottom{
+                margin-bottom: 16px;
+            }
+        }
+
+        &__column-three {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 31%;
+
+            &__position {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                margin-bottom: 6px;
+
+               i {
+                    position: absolute;
+                    bottom: -13px;
+                }
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+        
+        &__circle {
+            position: absolute;
+        }
+    }
+
+
+}
