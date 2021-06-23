@@ -479,7 +479,11 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 137px;
+>>>>>>> 84012897e2660385353fc9392062aba1ee189fcc
   height: 62px;
   border-radius: 12px;
   background-color: #FFFFFF;
@@ -638,6 +642,7 @@ template {
   bottom: 45px;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 768px) {
   .navbar__logo {
     z-index: 1;
@@ -691,6 +696,8 @@ template {
   }
 }
 
+=======
+>>>>>>> 84012897e2660385353fc9392062aba1ee189fcc
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -823,6 +830,7 @@ template {
   position: absolute;
 }
 
+<<<<<<< HEAD
 .main-md {
   display: none;
 }
@@ -967,6 +975,8 @@ template {
   }
 }
 
+=======
+>>>>>>> 84012897e2660385353fc9392062aba1ee189fcc
 .waiting {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1015,6 +1025,7 @@ template {
 
 body {
   background-color: #FAFAFA;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1025,6 +1036,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+>>>>>>> 84012897e2660385353fc9392062aba1ee189fcc
 }
 
 .container {
