@@ -1,10 +1,11 @@
 @import '../variables';
-@import '../components/mixins/text-heading-mobile.scss';
-@import '../components/mixins/text-paragraph-mobile.scss';
+@import '../components/mixins/text-heading.scss';
+@import '../components/mixins/text-paragraph.scss';
 
 .waiting {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin-top: 40px !important;
     padding-top: 40px !important;
     position: relative;
@@ -18,9 +19,13 @@
         padding-left: 0px;
     }
 
-    // &__ellipse {
-    //     position: absolute;
-    // }
+    &__figures {
+        display: none;
+    }
+
+    &__illustration {
+        display: none;
+    }
 
     &__line-angle {
         position: absolute;
@@ -31,5 +36,45 @@
         z-index: -1;
         background: linear-gradient(180deg,rgba(140,157,161,.12),rgba(140,157,161,0) 164.43%);
         transform: skewY(-5deg);
+    }
+}
+
+
+
+@media screen and (min-width: $media-md) {
+    .waiting {
+        padding-top: 230px !important;
+
+        &__heading {
+            @include text-heading-md;
+        }
+
+        &__list {
+            @include text-parahraph-md;
+        }
+
+        &__figures {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0px;
+            top: 100px;
+            width: 115px;
+
+            svg {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__illustration {
+            display: flex;
+            margin-left: 62px;
+            margin-top: 78px;
+        }
+        
+        &__line-angle {
+            bottom: 180px;
+        }
     }
 }

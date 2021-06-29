@@ -1,6 +1,6 @@
 @import '../variables';
-@import '../components/mixins/text-heading-mobile.scss';
-@import '../components/mixins/text-paragraph-mobile.scss';
+@import '../components/mixins/text-heading.scss';
+@import '../components/mixins/text-paragraph.scss';
 
 .main {
     display: flex;
@@ -71,22 +71,39 @@
         justify-content: center;
         align-items: center;
         margin: 40px;
+
+        &__ring {
+            animation: 42s linear infinite ring;
+        }
+
+        @keyframes ring {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
         
         &__circle {
             position: absolute;
         }
     }
-
-
-<<<<<<< HEAD
 }
 
 .main-md {
     display: none;
 }
 
+
+
 // Medium devices width (768px)
 @media screen and (min-width: $media-md) {
+
+    .main {
+        display: none;
+    }
+
     .main-md {
         padding-top: 90px !important;
         display: flex;
@@ -180,10 +197,4 @@
             }
         }
     }
-
-    .main {
-        display: none;
-    }
-=======
->>>>>>> 84012897e2660385353fc9392062aba1ee189fcc
 }

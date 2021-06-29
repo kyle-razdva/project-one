@@ -479,11 +479,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
   width: 100%;
-=======
-  width: 137px;
->>>>>>> 84012897e2660385353fc9392062aba1ee189fcc
   height: 62px;
   border-radius: 12px;
   background-color: #FFFFFF;
@@ -506,7 +502,7 @@ template {
   height: 8px;
   border-radius: 21px;
   margin-top: 15px;
-  background-color: #F6B549;
+  background-color: #378757;
 }
 
 .list-item p {
@@ -642,7 +638,6 @@ template {
   bottom: 45px;
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 768px) {
   .navbar__logo {
     z-index: 1;
@@ -696,8 +691,6 @@ template {
   }
 }
 
-=======
->>>>>>> 84012897e2660385353fc9392062aba1ee189fcc
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -717,6 +710,7 @@ template {
   font-size: 30px;
   line-height: 38px;
   color: #103E38;
+  width: 100%;
   margin: 0px auto 8px;
 }
 
@@ -826,16 +820,45 @@ template {
   margin: 40px;
 }
 
+.main__button__ring {
+  -webkit-animation: 42s linear infinite ring;
+          animation: 42s linear infinite ring;
+}
+
+@-webkit-keyframes ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .main__button__circle {
   position: absolute;
 }
 
-<<<<<<< HEAD
 .main-md {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
+  .main {
+    display: none;
+  }
   .main-md {
     padding-top: 90px !important;
     display: -webkit-box;
@@ -899,6 +922,7 @@ template {
     font-size: 48px;
     line-height: 60px;
     color: #103E38;
+    width: 100%;
     margin: 0px auto 14px;
   }
   .main-md__column-two__text {
@@ -970,13 +994,8 @@ template {
     left: 40%;
     bottom: 30%;
   }
-  .main {
-    display: none;
-  }
 }
 
-=======
->>>>>>> 84012897e2660385353fc9392062aba1ee189fcc
 .waiting {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -985,6 +1004,9 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-top: 40px !important;
   padding-top: 40px !important;
   position: relative;
@@ -997,6 +1019,7 @@ template {
   font-size: 30px;
   line-height: 38px;
   color: #103E38;
+  width: 100%;
   margin: 0px auto 8px;
 }
 
@@ -1008,6 +1031,14 @@ template {
   line-height: 30px;
   color: #526E74;
   padding-left: 0px;
+}
+
+.waiting__figures {
+  display: none;
+}
+
+.waiting__illustration {
+  display: none;
 }
 
 .waiting__line-angle {
@@ -1023,9 +1054,59 @@ template {
           transform: skewY(-5deg);
 }
 
+@media screen and (min-width: 768px) {
+  .waiting {
+    padding-top: 230px !important;
+  }
+  .waiting__heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color: #103E38;
+    width: 100%;
+    margin: 0px auto 14px;
+  }
+  .waiting__list {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #526E74;
+  }
+  .waiting__figures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    width: 115px;
+  }
+  .waiting__figures svg {
+    width: 100%;
+    height: auto;
+  }
+  .waiting__illustration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 62px;
+    margin-top: 78px;
+  }
+  .waiting__line-angle {
+    bottom: 180px;
+  }
+}
+
 body {
   background-color: #FAFAFA;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1036,12 +1117,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
->>>>>>> 84012897e2660385353fc9392062aba1ee189fcc
 }
 
 .container {
   padding: 0px 15px;
   margin: 0px auto;
-  max-width: 768px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0px 33px;
+  }
 }
