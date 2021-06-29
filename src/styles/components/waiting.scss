@@ -5,10 +5,10 @@
 .waiting {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 40px !important;
-    padding-top: 40px !important;
+    margin-top: 45px !important;
+    padding-top: 85px !important;
     position: relative;
+    overflow: hidden;
 
     &__heading {
         @include text-heading-mobile;
@@ -19,19 +19,25 @@
         padding-left: 0px;
     }
 
-    &__figures {
-        display: none;
+    &__illustration {
+        display: flex;
+        margin: 60px -15px 16px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
-    &__illustration {
+    &__figures {
         display: none;
     }
 
     &__line-angle {
         position: absolute;
         right: 0px;
-        bottom: 0px;
-        top: 0px;
+        bottom: 190px;
+        top: 20px;
         left: 0px;
         z-index: -1;
         background: linear-gradient(180deg,rgba(140,157,161,.12),rgba(140,157,161,0) 164.43%);
@@ -53,6 +59,13 @@
             @include text-parahraph-md;
         }
 
+        &__illustration {
+            margin-left: 62px;
+            margin-top: 78px;
+            width: 528px;
+            height: auto;
+        }
+
         &__figures {
             display: flex;
             flex-direction: column;
@@ -66,15 +79,9 @@
                 height: auto;
             }
         }
-
-        &__illustration {
-            display: flex;
-            margin-left: 62px;
-            margin-top: 78px;
-        }
         
         &__line-angle {
-            bottom: 180px;
+            bottom: 250px;
         }
     }
 }

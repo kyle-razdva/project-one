@@ -1,4 +1,5 @@
 include ../mixins/list-item.pug
+include ../mixins/download-buttons.pug
 
 div(class='waiting').container
     h1.waiting__heading Мы ждем вас<br> на Myrtus, если вы:
@@ -9,9 +10,10 @@ div(class='waiting').container
         +list-item('Известная личность и хотите привлечь внимание к глобальной или  социальной проблеме')
         +list-item('Представляете благотворительный фонд или другую общественную организацию')
         +list-item('Занимаетесь корпоративной благотворительностью')
+    .waiting__illustration
+        img(src='static/images/illustration2.png')
     .waiting__figures
         <svg width="115" height="177" viewBox="0 0 115 177" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="115" height="177" rx="57.5" fill="#103E38"/></svg>
         <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.02299 0C0.905723 0 0 0.910961 0 2.03468V43.7457C0 68.1867 19.6995 88 44 88C68.3005 88 88 68.1867 88 43.7457V2.03468C88 0.910958 87.0943 0 85.977 0H66.8303C54.2215 0 44.0001 10.2214 44.0001 22.8302C44.0001 10.2214 33.7787 0 21.1699 0H2.02299Z" fill="#99BE56"/></svg>
-    .waiting__illustration
-        img(src='static/images/illustration2.png')
+    +download-buttons()
     .waiting__line-angle
