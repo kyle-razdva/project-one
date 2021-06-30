@@ -1,0 +1,45 @@
+include ../mixins/download-buttons.pug
+include ../mixins/hashtag-button.pug
+
+div(class='for-what').container
+    h1.for-what__heading На что собирают средства пользователи Myrtus
+    p.for-what__text Мы объединяем людей, которым небезразлична судьба общества<br> и планеты в целом. Вот направления, для которых организовывают сбор средств:
+    .for-what__animations
+        .for-what__animations__line-one
+            +hashtag-button('static/images/animations/leaf.svg', 'Окружающая среда', 'green')
+            +hashtag-button('static/images/animations/hand-shake.svg', 'Активизм', 'brown')
+            +hashtag-button('static/images/animations/book.svg', 'Образование', 'blue')
+            +hashtag-button('static/images/animations/hand-heart.svg', 'Волонтерство', 'green')
+            +hashtag-button('static/images/animations/hospital.svg', 'Медицина', 'brown2')
+            +hashtag-button('static/images/animations/leaf.svg', 'Окружающая среда', 'green')
+            +hashtag-button('static/images/animations/hand-shake.svg', 'Активизм', 'brown')
+            +hashtag-button('static/images/animations/book.svg', 'Образование', 'blue')
+            +hashtag-button('static/images/animations/hand-heart.svg', 'Волонтерство', 'green')
+            +hashtag-button('static/images/animations/hospital.svg', 'Медицина', 'brown2')
+        .for-what__animations__line-two 
+            +hashtag-button('static/images/animations/family.svg', 'Семьи', 'blue2')
+            +hashtag-button('static/images/animations/flame.svg', 'Чрезвычайные ситуации', 'brown2')
+            +hashtag-button('static/images/animations/shop.svg', 'Бизнес', 'purple')
+            +hashtag-button('static/images/animations/ball.svg', 'Спорт', 'brown')
+            +hashtag-button('static/images/animations/school.svg', 'Некоммерческие организации', 'blue2')
+            +hashtag-button('static/images/animations/heart.svg', 'Религия', 'brown2')
+            +hashtag-button('static/images/animations/family.svg', 'Семьи', 'blue2')
+            +hashtag-button('static/images/animations/flame.svg', 'Чрезвычайные ситуации', 'brown2')
+            +hashtag-button('static/images/animations/shop.svg', 'Бизнес', 'purple')
+            +hashtag-button('static/images/animations/ball.svg', 'Спорт', 'brown')
+            +hashtag-button('static/images/animations/school.svg', 'Некоммерческие организации', 'blue2')
+            +hashtag-button('static/images/animations/heart.svg', 'Религия', 'brown2')
+        .for-what__animations__line-three
+            +hashtag-button('static/images/animations/travel.svg', 'Путешествия', 'purple')
+            +hashtag-button('static/images/animations/user.svg', 'Личные нужды', 'brown')
+            +hashtag-button('static/images/animations/animal.svg', 'Животные', 'green')
+            +hashtag-button('static/images/animations/history.svg', 'Исторические сооружения', 'brown')
+            +hashtag-button('static/images/animations/calendar.svg', 'Мероприятия', 'purple')
+            +hashtag-button('static/images/animations/travel.svg', 'Путешествия', 'purple')
+            +hashtag-button('static/images/animations/user.svg', 'Личные нужды', 'brown')
+            +hashtag-button('static/images/animations/animal.svg', 'Животные', 'green')
+            +hashtag-button('static/images/animations/history.svg', 'Исторические сооружения', 'brown')
+            +hashtag-button('static/images/animations/calendar.svg', 'Мероприятия', 'purple')
+    button.for-what__button-how Как это реботает
+        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 5H1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 9L15 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 1L15 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    +download-buttons

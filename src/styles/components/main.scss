@@ -5,15 +5,15 @@
 .main {
     display: flex;
     flex-direction: column;
-    padding-top: 90px !important;
-    padding-bottom: 24px !important;
+    margin-top: 90px;
+    padding-bottom: 24px;
     
     &__heading {
         @include text-heading-mobile;
     }
 
     &__text {
-        @include text-parahraph-mobile;
+        @include text-paragraph-mobile;
     }
 
     &__figures {
@@ -105,7 +105,7 @@
     }
 
     .main-md {
-        padding-top: 90px !important;
+        padding-top: 90px;
         display: flex;
         justify-content: space-between;
 
@@ -149,7 +149,7 @@
             }
             
             &__text {
-                @include text-parahraph-md;
+                @include text-paragraph-md;
             }
 
             &__button {

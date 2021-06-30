@@ -1,6 +1,6 @@
 @import "../../variables";
 
-@mixin text-parahraph-mobile() {
+@mixin text-paragraph-mobile() {
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -9,7 +9,7 @@
     color: $color-grey-700;
 }
 
-@mixin text-parahraph-md() {
+@mixin text-paragraph-md() {
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;

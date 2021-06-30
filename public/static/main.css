@@ -510,6 +510,74 @@ template {
   padding-left: 12px;
 }
 
+.hashtag-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 18px;
+  border-radius: 12px;
+  -webkit-box-shadow: 25px 23px 55px rgba(109, 143, 131, 0.08), 8px 8px 17px rgba(95, 139, 123, 0.06);
+          box-shadow: 25px 23px 55px rgba(109, 143, 131, 0.08), 8px 8px 17px rgba(95, 139, 123, 0.06);
+  background-color: #FFFFFF;
+  margin-right: 16px;
+  white-space: nowrap;
+}
+
+.hashtag-button img {
+  width: 26px;
+  height: 26px;
+}
+
+.hashtag-button p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  padding-left: 11px;
+  margin: 0px;
+}
+
+.hashtag-button.green {
+  color: #103E38;
+}
+
+.hashtag-button.brown {
+  color: #681F00;
+}
+
+.hashtag-button.brown2 {
+  color: #5D0011;
+}
+
+.hashtag-button.blue {
+  color: #002448;
+}
+
+.hashtag-button.blue2 {
+  color: #004D99;
+}
+
+.hashtag-button.purple {
+  color: #100050;
+}
+
+@media screen and (min-width: 768px) {
+  .hashtag-button {
+    padding: 21px 28px;
+    margin-right: 24px;
+  }
+  .hashtag-button p {
+    font-size: 16px;
+  }
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -699,8 +767,8 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 90px !important;
-  padding-bottom: 24px !important;
+  margin-top: 90px;
+  padding-bottom: 24px;
 }
 
 .main__heading {
@@ -860,7 +928,7 @@ template {
     display: none;
   }
   .main-md {
-    padding-top: 90px !important;
+    padding-top: 90px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1004,7 +1072,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 45px !important;
+  margin-top: 45px;
   padding-top: 85px !important;
   position: relative;
   overflow: hidden;
@@ -1108,6 +1176,178 @@ template {
   .waiting__line-angle {
     bottom: 250px;
   }
+  .waiting .download-buttons {
+    display: none;
+  }
+}
+
+.for-what {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 84px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.for-what__heading {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  color: #103E38;
+  width: 100%;
+  margin: 0px auto 8px;
+}
+
+.for-what__text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #526E74;
+}
+
+.for-what__animations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 48px 0px;
+  width: 290px;
+}
+
+.for-what__animations__line-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: string 35s linear infinite alternate;
+          animation: string 35s linear infinite alternate;
+}
+
+@-webkit-keyframes string {
+  0% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  100% {
+    -webkit-transform: translateX(-350%);
+            transform: translateX(-350%);
+  }
+}
+
+@keyframes string {
+  0% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  100% {
+    -webkit-transform: translateX(-350%);
+            transform: translateX(-350%);
+  }
+}
+
+.for-what__animations__line-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  -webkit-animation: string2 40s linear infinite alternate;
+          animation: string2 40s linear infinite alternate;
+}
+
+@-webkit-keyframes string2 {
+  0% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+  100% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
+@keyframes string2 {
+  0% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+  100% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
+.for-what__animations__line-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  -webkit-animation: string 45s linear infinite alternate;
+          animation: string 45s linear infinite alternate;
+}
+
+.for-what__button-how {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 8px;
+  background-color: #378757;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 17px 8px 16px;
+  margin: 0px auto 60px;
+}
+
+.for-what__button-how svg {
+  margin-left: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .for-what__heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color: #103E38;
+    width: 100%;
+    margin: 0px auto 14px;
+  }
+  .for-what__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #526E74;
+  }
+  .for-what .download-buttons {
+    display: none;
+  }
 }
 
 body {
@@ -1126,7 +1366,6 @@ body {
 
 .container {
   padding: 0px 15px;
-  margin: 0px auto;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,0 +1,104 @@
+@import '../variables';
+@import '../components/mixins/text-heading.scss';
+@import '../components/mixins/text-paragraph.scss';
+
+.for-what {
+    display: flex;
+    flex-direction: column;
+    margin-top: 84px;
+    text-align: center;
+    overflow: hidden;
+    
+    &__heading {
+        @include text-heading-mobile;
+    }
+
+    &__text {
+        @include text-paragraph-mobile;
+    }
+
+    &__animations {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 48px 0px;
+        width: 290px;
+
+        &__line-one {
+            display: flex;
+            animation: string 35s linear infinite alternate;
+
+            @keyframes string {
+                0% {
+                    transform:translateX(-10%);
+                }
+                  100% {
+                    transform:translateX(-350%);
+                }
+            }
+        }
+
+        &__line-two {
+            display: flex;
+            margin-top: 16px;
+            animation: string2 40s linear infinite alternate;
+            
+            @keyframes string2 {
+                0% {
+                    transform:translateX(-400%);
+                }
+                  100% {
+                    transform:translateX(-10%);
+                }
+            }
+        }
+
+        &__line-three {
+            display: flex;
+            margin-top: 16px;
+            animation: string 45s linear infinite alternate;
+        }
+    }
+
+    &__button-how {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border: none;
+       border-radius: 8px;
+       background-color: $color-green-500;
+       color: $color-white;
+       font-family: 'Inter';
+       font-style: normal;
+       font-weight: 600;
+       font-size: 16px;
+       line-height: 28px;
+       padding: 8px 17px 8px 16px;
+       margin: 0px auto 60px;
+       
+
+       svg {
+           margin-left: 13px;
+       }
+    }
+}
+
+
+
+@media screen and (min-width: $media-md) {
+    .for-what {
+        
+
+        &__heading {
+            @include text-heading-md;
+        }
+    
+        &__text {
+            @include text-paragraph-md;
+        }
+
+        .download-buttons {
+            display: none;
+        }
+    }
+}
