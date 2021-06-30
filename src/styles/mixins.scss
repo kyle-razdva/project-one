@@ -80,6 +80,17 @@
     }
 }
 
+.list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D7E8E0;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 32px;
+}
+
 @media screen and (min-width: $media-md) {
     .hashtag-button {
         padding: 21px 28px;

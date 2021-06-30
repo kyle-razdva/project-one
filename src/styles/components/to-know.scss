@@ -1,0 +1,58 @@
+@import '../variables';
+@import '../components/mixins/text-heading.scss';
+@import '../components/mixins/text-paragraph.scss';
+
+.to-know {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    position: relative;
+    overflow: hidden;
+    
+    &__heading {
+        @include text-heading-mobile;
+        margin-top: 60px;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        @include text-paragraph-mobile;
+        margin: 8px;
+    }
+
+    strong {
+        color: $color-green-600;
+    }
+
+    p:last-of-type {
+        margin-bottom: 60px;
+      }
+
+    &__line-angle {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 20px;
+    left: 0px;
+    z-index: -1;
+    background: linear-gradient(180deg,rgba(140,157,161,.12),rgba(140,157,161,0) 164.43%);
+    transform: skewY(-5deg);
+    }
+}
+
+
+
+@media screen and (min-width: $media-md) {
+    .to-know {
+
+        &__heading {
+            margin-top: 200px;
+            margin-bottom: 82px;
+        }
+
+        &__line-angle {
+            bottom: 0px;
+            top: 40px;
+            }
+    }
+}

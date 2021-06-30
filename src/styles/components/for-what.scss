@@ -87,7 +87,11 @@
 
 @media screen and (min-width: $media-md) {
     .for-what {
-        
+        margin-top: 132px;
+
+        &__animations {
+            margin: 88px 0px;
+        }
 
         &__heading {
             @include text-heading-md;
