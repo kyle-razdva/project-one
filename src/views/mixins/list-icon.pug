@@ -1,3 +1,7 @@
-mixin list-icon(imageSrc)
+mixin list-icon(imageSrc, title, text)
     .list-icon
-        img(src=imageSrc)
+        .list-icon__circle
+            img(src=imageSrc)
+        .list-icon__text
+            strong= title
+            p= text

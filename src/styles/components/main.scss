@@ -105,8 +105,9 @@
     }
 
     .main-md {
-        padding-top: 90px;
+        margin-top: 90px;
         display: flex;
+        padding: 0px !important;
         justify-content: space-between;
 
         svg, img {

@@ -1,8 +1,9 @@
+@import "./variables";
+@import './components/mixins/text-paragraph.scss';
+
 .download-buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    
     &__button {
         display: flex;
         justify-content: center;
@@ -12,7 +13,28 @@
         border-radius: 12px;
         background-color: #FFFFFF;
         box-shadow: 0px 4px 20px rgba(197, 242, 128, 0.04), 0px 4px 8px rgba(55, 169, 2, 0.04);
-        margin: 0px 8px;
+        border: none;
+
+        &:hover {
+            background-color: #E9F0EF;
+        }
+
+        &:focus {
+            border: 2px solid #00B2FF;
+        }
+
+        &.variant-two {
+            background-color: rgba(255,255,255,0.05);
+            box-shadow: none;
+
+            &:hover {
+                box-shadow: 0px 4px 20px rgba(148, 187, 68, 0.04), 0px 4px 8px rgba(54, 135, 106, 0.04);
+            }
+        }
+    }
+
+    &__button:last-of-type {
+        margin-left: 16px;
     }
 }
 
@@ -82,13 +104,48 @@
 
 .list-icon {
     display: flex;
+    flex-direction: column;
+    
+    &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #D7E8E0;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    &__text {
+        @include text-paragraph-mobile;
+        margin: 12px 0px 32px;
+
+        strong {
+            color: $color-green-600;
+        }
+
+        p {
+            display: inline;
+            margin: 0px;
+        }
+    }
+}
+
+.action-button {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D7E8E0;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    margin-top: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    background-color: $color-green-500;
+    color: $color-white;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+    border: none;
 }
 
 @media screen and (min-width: $media-md) {

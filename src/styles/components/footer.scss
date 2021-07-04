@@ -1,0 +1,74 @@
+@import "../variables";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-green-600;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-white;
+    width: 100%;
+
+    &__list-info {
+
+        li:nth-child(odd) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__decor-line {
+        margin: 40px 0px;
+        width: 100%;
+        border: 1px solid $color-white;
+        opacity: 0.1;
+    }
+
+    &__myrtus {
+        display: flex;
+        align-items: center;
+
+        svg:nth-child(1) {
+            width: 20px;
+            height: 14px;
+        }
+
+        svg:nth-child(2) {
+            width: 60px;
+            height: 15px;
+            margin-left: 8px;
+            margin-right: 16px;
+            align-self: flex-end;
+        }
+    }
+
+    &__mail {
+        display: flex;
+        align-items: center;
+        margin-top: 21px;
+
+        span {
+            margin-left: 9px;
+        }
+    }
+
+    &__choose-language {
+        margin: 50px 0px;
+
+        svg {
+            margin-left: 9px;
+            margin-bottom: 1px;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 50px 0px 0px;
+    }
+
+    li {
+        margin-bottom: 20px;
+    }
+}

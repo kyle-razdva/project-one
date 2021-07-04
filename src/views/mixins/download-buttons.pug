@@ -1,6 +1,15 @@
-mixin download-buttons 
+mixin download-buttons(variant) 
     .download-buttons
-        .download-buttons__button
+        button.download-buttons__button(class=variant)
             i(class='svg-app-store svg-app-store-dims')
-        .download-buttons__button
+        button.download-buttons__button(class=variant)
             i(class='svg-google-play svg-google-play-dims')
+
+
+
+mixin download-buttons__white-icon(variant) 
+    .download-buttons
+        button.download-buttons__button(class=variant)
+            i(class='svg-app-store-white svg-app-store-white-dims')
+        button.download-buttons__button(class=variant)
+            i(class='svg-google-play-white svg-google-play-white-dims')

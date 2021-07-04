@@ -110,7 +110,7 @@ function iconBuilder() {
 }
 
 function imageBuilder() {
-  return src('src/assets/images/*')
+  return src('src/assets/images/**/*') //update images pipeline in gulp file
     .pipe(image())
     .pipe(dest('public/static/images'))
 }

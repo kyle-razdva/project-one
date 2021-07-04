@@ -1,6 +1,6 @@
 include ../mixins/download-buttons.pug
 
-div(class='main').container
+section(class='main').container
     h1.main__heading Сообщество людей, которые делают мир лучше
     p.main__text Myrtus – это краудфандинговая платформа, где собирают средства на помощь людям, природе и некоммерческим организациям.
     .main__figures 
@@ -23,7 +23,7 @@ div(class='main').container
         i(class='svg-main-button-circle svg-main-button-circle-dims main__button__circle')
     +download-buttons()
 
-div(class='main-md')
+section(class='main-md').container
     .main-md__column-one
         .main-md__column-one__top
             img(src='static/images/face-one.png')

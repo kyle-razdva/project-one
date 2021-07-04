@@ -1,0 +1,18 @@
+include ../mixins/action-button.pug
+
+section(class='subscribe').container
+    h1.subscribe__heading Подпишитесь на наши новости
+    p.subscribe__text Будьте в курсе обновлений платформы и событий нашего сообщества
+    .subscribe__input-group
+        input(type='email' placeholder='Email').subscribe__input-group__input
+        <svg class='input-close' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8299 9.16992L9.16992 14.8299" stroke="#526E74" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.8299 14.8299L9.16992 9.16992" stroke="#526E74" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 21V21C7.029 21 3 16.971 3 12V12C3 7.029 7.029 3 12 3V3C16.971 3 21 7.029 21 12V12C21 16.971 16.971 21 12 21Z" stroke="#526E74" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    +action-button('Подписаться')
+    p.subscribe__button-PrivacyPolicy Нажимая на кнопку вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>.
+    .subscribe__figures
+        .subscribe__figures__line-one
+            i(class='svg-logo-in-circle svg-logo-in-circle-dims')
+            i(class='svg-oval-half svg-oval-half-dims')
+        .subscribe__figures__line-two
+            <svg class='subscribe__figures__line-two__flower' width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.02299 0C0.905723 0 0 0.910961 0 2.03468V43.7457C0 68.1867 19.6995 88 44 88C68.3005 88 88 68.1867 88 43.7457V2.03468C88 0.910958 87.0943 0 85.977 0H66.8303C54.2215 0 44.0001 10.2214 44.0001 22.8302C44.0001 10.2214 33.7787 0 21.1699 0H2.02299Z" fill="#99BE56"/></svg>
+            <svg class='subscribe__figures__line-two__circle-fourth' width="58" height="56" viewBox="0 0 58 56" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="70" cy="70.5" rx="70" ry="70.5" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="21.1173" y1="5.90782" x2="111.847" y2="119.103" gradientUnits="userSpaceOnUse"><stop stop-color="#2C5B53"/><stop offset="1" stop-color="#1A413A"/></linearGradient></defs></svg>
+            <svg class='subscribe__figures__line-two__line-fourth' width="81" height="78" viewBox="0 0 81 78" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity="0.16" cx="93" cy="93" r="92" stroke="#378757" stroke-width="2"/></svg>
