@@ -41,11 +41,11 @@
         &__line-two {
             display: flex;
             margin-top: 16px;
-            animation: string2 55s linear infinite alternate;
+            animation: string2 50s linear infinite alternate;
             
             @keyframes string2 {
                 0% {
-                    transform:translateX(-400%);
+                    transform:translateX(-250%);
                 }
                   100% {
                     transform:translateX(-10%);
@@ -56,7 +56,7 @@
         &__line-three {
             display: flex;
             margin-top: 16px;
-            animation: string 45s linear infinite alternate;
+            animation: string 50s linear infinite alternate;
         }
     }
 
@@ -98,7 +98,7 @@
         }
     
         &__text {
-            @include text-paragraph-md;
+            @include text-paragraph-md-large;
         }
 
         .download-buttons {

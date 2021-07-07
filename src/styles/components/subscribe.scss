@@ -1,11 +1,11 @@
 @import "../variables";
+@import '../components/mixins/text-heading.scss';
 @import '../components/mixins/text-paragraph.scss';
 
 .subscribe {
     display: flex;
     flex-direction: column;
     margin: 72px 15px 130px;
-    padding: 0px 15px;
     background-color: $color-white;
     border-radius: 24px;
     backface-visibility: hidden; 
@@ -85,7 +85,6 @@
         }
 
         &__line-two {
-            display: flex;
             position: relative;
 
             &__flower {
@@ -94,24 +93,120 @@
                 height: auto;
             }
 
-            &__circle-fourth {
+            &__circle-half {
                 position: absolute;
-                right: 0px;
-                top: 12px;
+                right: -110px;
+                top: 14px;
             }
 
-            &__line-fourth {
+            &__line-half {
                 position: absolute;
-                right: 0px;
-                top: -10px;
+                right: -138px;
+                top: -13px;
+            }
+
+            &__light-star, &__light-star-two {
+                display: none;
             }
         }
     }
+
+    .input-close {
+        display: none;
+        position: absolute;
+        top: 27px;
+        right: 12px;
+    }
 }
 
-.input-close {
-    display: none;
-    position: absolute;
-    top: 27px;
-    right: 12px;
+
+
+@media screen and (min-width: $media-md) {
+    .subscribe {
+        margin: 100px 33px 148px;
+        padding: 50px 45px 0px 225px !important;
+
+        &__heading {
+            @include text-heading-md;
+        }
+
+        &__text {
+            @include text-paragraph-md;
+        }
+
+        &__input-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+
+            &__input {
+                margin-right: 8px;
+            }
+        }
+
+        &__button-PrivacyPolicy {
+            margin: 0px;
+        }
+
+        &__figures {
+            position: relative;
+            margin-top: 100px;
+            padding-bottom: 104px;
+
+            &__line-one {
+                position: absolute;
+                top: -245px;
+                left: -270px;
+
+                img:nth-child(1) {
+                    width: 174px;
+                    height: auto;
+                }
+
+                img:nth-child(2) {
+                    width: 56px;
+                    height: 51px;
+                }
+            }
+               
+            &__line-two {
+                position: absolute;
+                
+                &__flower {
+                    width: 174px;
+                    height: 174px;
+                    top: -70px;
+                    left: -300px;
+                }
+    
+                &__circle-half {
+                    left: -70px;
+                    top: -20px;
+                }
+    
+                &__line-half {
+                    left: -98px;
+                    top: -47px;
+                }
+
+                &__light-star {
+                    display: block;
+                    position: absolute;
+                    bottom: 400px;
+                    right: 150px;
+                }
+
+                &__light-star-two {
+                    display: block;
+                    position: absolute;
+                    left: 350px;
+                }
+            }
+        }
+    }
+
+    .input-close {
+        left: 255px;
+    }
 }

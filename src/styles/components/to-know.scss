@@ -26,8 +26,13 @@
     .to-know {
 
         &__heading {
+            @include text-heading-md;
             margin-top: 200px;
             margin-bottom: 82px;
+        }
+
+        .download-buttons {
+            display: none;
         }
     }
 }
