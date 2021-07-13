@@ -461,6 +461,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .download-buttons__button {
@@ -473,6 +476,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 200px;
   width: 100%;
   height: 62px;
   border-radius: 12px;
@@ -1172,6 +1176,71 @@ template {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .main-md {
+    margin-right: 57px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .main-md__column-one {
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .main-md__column-one svg, .main-md__column-one img {
+    width: 167px;
+  }
+  .main-md__column-one__top {
+    margin-top: 172px;
+    margin-left: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .main-md__column-one__top img {
+    margin-bottom: 19px;
+  }
+  .main-md__column-one__bottom {
+    margin-top: 368px;
+    margin-left: -23px;
+  }
+  .main-md__column-one__bottom svg {
+    top: 70px;
+    height: 500px;
+  }
+  .main-md__column-one__bottom svg rect {
+    height: 193px;
+  }
+  .main-md__column-two {
+    width: 44%;
+  }
+  .main-md__column-two__button {
+    margin-top: 124px;
+    margin-bottom: 70px;
+  }
+  .main-md__column-three {
+    width: 15%;
+    margin-left: 70px;
+  }
+  .main-md__column-three__top {
+    top: -17%;
+    margin-bottom: -50px;
+  }
+  .main-md__column-three__top i {
+    left: 42%;
+    bottom: 30.5%;
+  }
+}
+
 .waiting {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1186,7 +1255,7 @@ template {
   overflow: hidden;
 }
 
-.waiting__heading {
+.waiting__text__heading {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -1197,7 +1266,7 @@ template {
   margin: 0px auto 8px;
 }
 
-.waiting__list {
+.waiting__text__list {
   font-family: 'Inter';
   font-style: normal;
   font-weight: normal;
@@ -1240,7 +1309,7 @@ template {
   .waiting {
     padding-top: 230px !important;
   }
-  .waiting__heading {
+  .waiting__text__heading {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -1250,7 +1319,7 @@ template {
     width: 100%;
     margin: 0px auto 14px;
   }
-  .waiting__list {
+  .waiting__text__list {
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -1282,14 +1351,42 @@ template {
     height: auto;
   }
   .waiting__line-angle {
-    bottom: 250px;
-  }
-  .waiting__line-angle {
     top: 40px;
     bottom: 470px;
   }
   .waiting .download-buttons {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .waiting {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow: visible;
+    position: relative;
+  }
+  .waiting__text {
+    width: 45%;
+  }
+  .waiting__text__list {
+    margin-top: 48px;
+    width: 93%;
+  }
+  .waiting__figures {
+    display: none;
+  }
+  .waiting__illustration {
+    margin: 0px;
+    right: 0px;
+    position: absolute;
+    width: 60%;
+  }
+  .waiting__line-angle {
+    top: -40px;
+    bottom: -50px;
   }
 }
 
@@ -1465,6 +1562,19 @@ template {
   }
   .for-what .download-buttons {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .for-what {
+    margin-top: 415px;
+  }
+  .for-what__heading {
+    width: 65%;
+  }
+  .for-what__text {
+    width: 73%;
+    margin: 8px auto;
   }
 }
 
@@ -1953,5 +2063,11 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     padding: 0px 33px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0px 57px;
   }
 }

@@ -12,4 +12,8 @@ body {
     @media screen and (min-width: $media-md) {
         padding: 0px 33px;
     }
+
+    @media screen and (min-width: $media-xl) {
+        padding: 0px 57px;
+    }
 }

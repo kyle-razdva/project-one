@@ -10,11 +10,11 @@
     position: relative;
     overflow: hidden;
 
-    &__heading {
+    &__text__heading {
         @include text-heading-mobile;
     }
 
-    &__list {
+    &__text__list {
         @include text-paragraph-mobile;
         padding-left: 0px;
     }
@@ -51,11 +51,11 @@
     .waiting {
         padding-top: 230px !important;
 
-        &__heading {
+        &__text__heading {
             @include text-heading-md;
         }
 
-        &__list {
+        &__text__list {
             @include text-paragraph-md;
         }
 
@@ -79,10 +79,6 @@
                 height: auto;
             }
         }
-        
-        &__line-angle {
-            bottom: 250px;
-        }
 
         &__line-angle {
             top: 40px;
@@ -91,6 +87,41 @@
 
         .download-buttons {
             display: none;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: $media-xl) {
+    .waiting {
+        flex-direction: row;
+        overflow: visible;
+        position: relative;
+
+        &__text {
+            width: 45%;
+        }
+
+        &__text__list {
+            margin-top: 48px;
+            width: 93%;
+        }
+
+        &__figures {
+            display: none;
+        }
+
+        &__illustration {
+            margin: 0px;
+            right: 0px;
+            position: absolute;
+            width: 60%;
+        }
+
+        &__line-angle {
+            top: -40px;
+            bottom: -50px;
         }
     }
 }

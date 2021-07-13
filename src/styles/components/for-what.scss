@@ -106,3 +106,18 @@
         }
     }
 }
+
+@media screen and (min-width: $media-xl) {
+    .for-what {
+        margin-top: 415px;
+
+        &__heading {
+            width: 65%;
+        }
+
+        &__text {
+            width: 73%;
+            margin: 8px auto;
+        }
+    }
+}

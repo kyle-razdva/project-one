@@ -2,14 +2,15 @@ include ../mixins/list-item.pug
 include ../mixins/download-buttons.pug
 
 section(class='waiting').container
-    h1.waiting__heading Мы ждем вас<br> на Myrtus, если вы:
-    ul.waiting__list
-        +list-item('Попали в трудную ситуацию и негде попросить о помощи')
-        +list-item('Хотите начать или уже помогаете природе и людям')
-        +list-item('Волонтер или активист')
-        +list-item('Известная личность и хотите привлечь внимание к глобальной или  социальной проблеме')
-        +list-item('Представляете благотворительный фонд или другую общественную организацию')
-        +list-item('Занимаетесь корпоративной благотворительностью')
+    .waiting__text
+        h1.waiting__text__heading Мы ждем вас<br> на Myrtus, если вы:
+        ul.waiting__text__list
+            +list-item('Попали в трудную ситуацию и негде попросить о помощи')
+            +list-item('Хотите начать или уже помогаете природе и людям')
+            +list-item('Волонтер или активист')
+            +list-item('Известная личность и хотите привлечь внимание к глобальной или  социальной проблеме')
+            +list-item('Представляете благотворительный фонд или другую общественную организацию')
+            +list-item('Занимаетесь корпоративной благотворительностью')
     .waiting__illustration
         img(src='static/images/illustration2.png')
     .waiting__figures
