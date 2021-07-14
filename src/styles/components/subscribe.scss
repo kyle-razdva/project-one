@@ -105,6 +105,10 @@
                 top: -13px;
             }
 
+            &__circle-fourth {
+                display: none;
+            }
+
             &__light-star, &__light-star-two {
                 display: none;
             }
@@ -190,6 +194,10 @@
                     top: -47px;
                 }
 
+                &__circle-fourth {
+                    display: none;
+                }
+
                 &__light-star {
                     display: block;
                     position: absolute;
@@ -208,5 +216,89 @@
 
     .input-close {
         left: 255px;
+    }
+}
+
+
+
+@media screen and (min-width: $media-xl) {
+    .subscribe {
+        margin: 170px 56px 190px;
+        
+        &__heading {
+            width: 55%;
+            margin: 0px 0px 0px 327px;
+        }
+
+        &__text {
+            width: 55%;
+            margin: 12px 0px 0px 327px;
+        }
+
+        &__input-group {
+            width: 60%;
+            margin: 24px 0px 0px 327px;
+        }
+
+        &__button-PrivacyPolicy {
+            margin: 0px 0px 0px 327px;
+            text-align: start;
+        }
+
+        &__figures {
+            margin-top: 46px;
+            padding-bottom: 46px;
+
+            &__line-one {
+                top: -377px;
+                left: -100px;
+
+                img:nth-child(1) {
+                    width: 240px;
+                    height: auto;
+                }
+
+                img:nth-child(2) {
+                    width: 76px;
+                    height: 71px;
+                }
+            }
+
+            &__line-two {
+
+                &__flower {
+                    width: 240px;
+                    height: 240px;
+                    top: -137px;
+                    left: -130px;
+                }
+
+                &__circle-half {
+                    left: 126px;
+                    top: -10px;
+                }
+    
+                &__line-half {
+                    left: 98px;
+                    top: -30px;
+                }
+
+                &__circle-fourth {
+                    display: block;
+                    position: absolute;
+                    left: -255px;
+                    top: -280px;
+                }
+
+                &__light-star {
+                    bottom: 328px;
+                    right: -219px;
+                }
+
+                &__light-star-two {
+                    display: none;
+                }
+            }
+        }
     }
 }

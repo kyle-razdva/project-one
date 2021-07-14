@@ -1609,6 +1609,10 @@ template {
 }
 
 @media screen and (min-width: 768px) {
+  .to-know {
+    position: relative;
+    overflow: visible;
+  }
   .to-know__heading {
     font-family: 'Montserrat';
     font-style: normal;
@@ -1623,6 +1627,24 @@ template {
   }
   .to-know .download-buttons {
     display: none;
+  }
+  .to-know__line-angle {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    bottom: -500px;
+    left: 0px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(140, 157, 161, 0.12)), color-stop(164.43%, rgba(140, 157, 161, 0)));
+    background: linear-gradient(180deg, rgba(140, 157, 161, 0.12), rgba(140, 157, 161, 0) 164.43%);
+    -webkit-transform: skewY(-5deg);
+            transform: skewY(-5deg);
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .to-know__line-angle {
+    bottom: -450px;
   }
 }
 
@@ -1757,6 +1779,10 @@ template {
   top: -13px;
 }
 
+.subscribe__figures__line-two__circle-fourth {
+  display: none;
+}
+
 .subscribe__figures__line-two__light-star, .subscribe__figures__line-two__light-star-two {
   display: none;
 }
@@ -1844,6 +1870,9 @@ template {
     left: -98px;
     top: -47px;
   }
+  .subscribe__figures__line-two__circle-fourth {
+    display: none;
+  }
   .subscribe__figures__line-two__light-star {
     display: block;
     position: absolute;
@@ -1857,6 +1886,71 @@ template {
   }
   .input-close {
     left: 255px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin: 170px 56px 190px;
+  }
+  .subscribe__heading {
+    width: 55%;
+    margin: 0px 0px 0px 327px;
+  }
+  .subscribe__text {
+    width: 55%;
+    margin: 12px 0px 0px 327px;
+  }
+  .subscribe__input-group {
+    width: 60%;
+    margin: 24px 0px 0px 327px;
+  }
+  .subscribe__button-PrivacyPolicy {
+    margin: 0px 0px 0px 327px;
+    text-align: start;
+  }
+  .subscribe__figures {
+    margin-top: 46px;
+    padding-bottom: 46px;
+  }
+  .subscribe__figures__line-one {
+    top: -377px;
+    left: -100px;
+  }
+  .subscribe__figures__line-one img:nth-child(1) {
+    width: 240px;
+    height: auto;
+  }
+  .subscribe__figures__line-one img:nth-child(2) {
+    width: 76px;
+    height: 71px;
+  }
+  .subscribe__figures__line-two__flower {
+    width: 240px;
+    height: 240px;
+    top: -137px;
+    left: -130px;
+  }
+  .subscribe__figures__line-two__circle-half {
+    left: 126px;
+    top: -10px;
+  }
+  .subscribe__figures__line-two__line-half {
+    left: 98px;
+    top: -30px;
+  }
+  .subscribe__figures__line-two__circle-fourth {
+    display: block;
+    position: absolute;
+    left: -255px;
+    top: -280px;
+  }
+  .subscribe__figures__line-two__light-star {
+    bottom: 328px;
+    right: -219px;
+  }
+  .subscribe__figures__line-two__light-star-two {
+    display: none;
   }
 }
 
