@@ -2139,6 +2139,59 @@ template {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__block-top__list-info {
+    margin-bottom: 0px;
+  }
+  .footer__block-top__list-info__group-two {
+    margin: 0px 120px;
+  }
+  .footer .download-buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 352px;
+  }
+  .footer .download-buttons__button:last-of-type {
+    margin: 0px 0px 0px 16px;
+  }
+  .footer__block-under {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__block-under__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__block-under__group__mail {
+    margin: 0px 42px;
+  }
+  .footer__block-under__list-documents {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer__block-under__list-documents :last-of-type {
+    margin: 0px 304px 0px 42px;
+  }
+  .footer__block-under__list-documents a {
+    padding: 0px;
+  }
+}
+
 body {
   background-color: #FAFAFA;
   display: -webkit-box;

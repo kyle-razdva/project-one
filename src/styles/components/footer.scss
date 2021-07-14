@@ -96,7 +96,6 @@
 
 
 @media screen and (min-width: $media-md) {
-
    .footer {
 
        &__block-top {
@@ -138,6 +137,58 @@
         
             &__choose-language {
                 margin: 0px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: $media-xl) {
+    .footer {
+
+        &__block-top__list-info {
+            margin-bottom: 0px;
+            
+            &__group-two {
+                margin: 0px 120px;
+            }
+        }
+
+        .download-buttons {
+            flex-direction: row;
+            width: 352px;
+
+            &__button:last-of-type {
+                margin: 0px 0px 0px 16px;
+            }
+        }
+
+        &__block-under {
+            align-items: flex-start;
+
+            &__group {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                &__mail {
+                    margin: 0px 42px;
+                }
+            }
+
+            &__list-documents {
+                flex-direction: row;
+                margin: 0px;
+                padding: 0px;
+
+                :last-of-type {
+                    margin: 0px 304px 0px 42px;
+                }
+
+                a {
+                    padding: 0px;
+                }
             }
         }
     }
